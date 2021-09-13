@@ -1,0 +1,57 @@
+(better-symmetrize-body-parts asym-hobbit-body-parts)
+[{:name "head", :size 3}
+ {:name "left-eye", :size 1}
+ {:name "right-eye", :size 1}
+ {:name "left-ear", :size 1}
+ {:name "right-ear", :size 1}
+ {:name "mouth", :size 1}
+ {:name "nose", :size 1}
+ {:name "neck", :size 2}
+ {:name "left-shoulder", :size 3}
+ {:name "right-shoulder", :size 3}
+ {:name "right-upper-arm", :size 3}
+ {:name "left-upper-arm", :size 3}
+ {:name "chest", :size 10}
+ {:name "back", :size 10}
+ {:name "left-forearm", :size 3}
+ {:name "right-forearm", :size 3}
+ {:name "abdomen", :size 6}
+ {:name "left-kidney", :size 1}
+ {:name "right-kidney", :size 1}
+ {:name "left-hand", :size 2}
+ {:name "right-hand", :size 2}
+ {:name "right-knee", :size 2}
+ {:name "left-knee", :size 2}
+ {:name "right-thigh", :size 4}
+ {:name "left-thigh", :size 4}
+ {:name "right-lower-leg", :size 3}
+ {:name "left-lower-leg", :size 3}
+ {:name "right-achilles", :size 1}
+ {:name "left-achilles", :size 1}
+ {:name "right-foot", :size 2}
+ {:name "left-foot", :size 2}]
+clj꞉clojure-noob.hobbit꞉> 
+hit
+; Syntax error compiling at (.calva/output-window/output.calva-repl:1:7989).
+; Unable to resolve symbol: hit in this context
+clj꞉clojure-noob.hobbit꞉> 
+(hit)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:38:1).
+; Unable to resolve symbol: hit in this context
+clj꞉clojure-noob.hobbit꞉> 
+#'clojure-noob.hobbit/hit
+clj꞉clojure-noob.hobbit꞉> 
+hit
+#function[clojure-noob.hobbit/hit]
+clj꞉clojure-noob.hobbit꞉> 
+(hit)
+; Execution error (ArityException) at clojure-noob.hobbit/eval7781 (form-init11552705542479562680.clj:47).
+; Wrong number of args (0) passed to: clojure-noob.hobbit/hit
+clj꞉clojure-noob.hobbit꞉> (hit asym-hobbit-body-parts)
+{:name "right-foot", :size 2}
+clj꞉clojure-noob.hobbit꞉> 
+(hit asym-hobbit-body-parts)
+{:name "back", :size 10}
+clj꞉clojure-noob.hobbit꞉> (hit (better-symmetrize-body-parts asym-hobbit-body-parts))
+{:name "left-upper-arm", :size 3}
+clj꞉clojure-noob.hobbit꞉> 
